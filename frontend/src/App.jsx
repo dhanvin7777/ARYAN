@@ -96,6 +96,12 @@ export default function App() {
     fetchRequestsData();
   }, []);
 
+  // Filter change auto-refresh
+  useEffect(() => {
+    fetchHackathonsList();
+  }, [platformFilter, modeFilter]);
+
+
   async function fetchProfileData() {
     try {
       const res = await getMyProfile();

@@ -1,0 +1,27 @@
+{
+  "name": "aryan-backend",
+  "version": "1.0.0",
+  "description": "Backend API for ARYAN application - Deployed on Render and connected to Supabase",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "keywords": [
+    "render",
+    "supabase",
+    "express",
+    "fullstack"
+  ],
+  "author": "ARYAN",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "@tiny-fish/sdk": "^0.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3"
+  }
+}
